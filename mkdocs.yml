@@ -1,0 +1,9 @@
+site_name: Docs-as-Code Consulting
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Services: services.md
+  - About: about.md
+  - Blog:
+    - First Post: blog/first-post.md
