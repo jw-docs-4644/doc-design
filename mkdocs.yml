@@ -1,9 +1,15 @@
 site_name: Docs-as-Code Consulting
 theme:
-  name: material
+  name: mkdocs
 nav:
   - Home: index.md
   - Services: services.md
   - About: about.md
+  - Portfolio:
+    - Overview: portfolio/index.md
+    - Canvas Docs-as-Code:
+      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md
+      - Multi-Machine Setup: portfolio/canvas-docs-as-code-public/multi_machine_setup.md
+    - Intervals.icu: portfolio/intervals-icu/index.md
   - Blog:
     - First Post: blog/first-post.md
