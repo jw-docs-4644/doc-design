@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>First Post - Docs-as-Code Consulting</title>
+        <title>intervals-icu - Docs-as-Code Consulting</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../portfolio/" class="dropdown-item">Overview</a>
+    <a href="../" class="dropdown-item">Overview</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -60,7 +60,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../portfolio/canvas-docs-as-code-public/explanation/why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
+    <a href="../canvas-docs-as-code-public/explanation/why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
 </li>
     </ul>
   </li>
@@ -70,7 +70,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../portfolio/canvas-docs-as-code-public/how-to/using-rubrics/" class="dropdown-item">Using Rubrics</a>
+    <a href="../canvas-docs-as-code-public/how-to/using-rubrics/" class="dropdown-item">Using Rubrics</a>
 </li>
     </ul>
   </li>
@@ -79,11 +79,11 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Blog</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">First Post</a>
+    <a href="../../blog/first-post/" class="dropdown-item">First Post</a>
 </li>
                                 </ul>
                             </li>
@@ -95,16 +95,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../../portfolio/canvas-docs-as-code-public/how-to/using-rubrics/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -123,20 +113,41 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#getting-started-with-docs-as-code" class="nav-link">Getting Started with Docs-as-Code</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#why-docs-as-code" class="nav-link">Why Docs-as-Code?</a>
+            <li class="nav-item" data-bs-level="1"><a href="#intervals-icu" class="nav-link">intervals-icu</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#the-tools" class="nav-link">The Tools</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#pre-requisites" class="nav-link">Pre-requisites</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#getting-started" class="nav-link">Getting Started</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#getting-info-from-intervalsicu" class="nav-link">Getting info from Intervals.icu</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#using-this-script" class="nav-link">Using this Script</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#set-up-your-env-file" class="nav-link">Set up your .env file.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#plan-your-workout-in-csv" class="nav-link">Plan your workout in CSV</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#running-the-script" class="nav-link">Running the Script</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#other-scripts" class="nav-link">Other Scripts</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -144,43 +155,137 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="getting-started-with-docs-as-code">Getting Started with Docs-as-Code</h1>
-<p>Docs-as-code is more than just writing Markdown files in a Git repository. It's a mindset shift: treating documentation with the same discipline, tooling, and automation that you apply to code.</p>
-<h2 id="why-docs-as-code">Why Docs-as-Code?</h2>
-<p>Traditional documentation workflows are often fragmented:</p>
+<h1 id="intervals-icu">intervals-icu</h1>
+<p>This python script can be used to push workout data to intervals.icu through their api. Plan your intervals in a spreadsheet, save to csv, and send it to Intervals. </p>
+<h1 id="pre-requisites">Pre-requisites</h1>
 <ul>
-<li>Documentation lives in separate systems (Word, Confluence, Google Docs)</li>
-<li>Changes are hard to track and review</li>
-<li>Manual publication processes introduce errors</li>
-<li>Keeping docs in sync with code is difficult</li>
+<li>Python installed</li>
+<li>Ability to create and start a venv for python scripts to run in</li>
+<li>An account with <a href="https://intervals.icu">intervals.icu</a></li>
+<li>user id</li>
+<li>api key</li>
 </ul>
-<p>Docs-as-code solves these problems by:</p>
-<ul>
-<li><strong>Storing docs in version control</strong> alongside your code</li>
-<li><strong>Using the same workflows</strong> for documentation changes (pull requests, code review)</li>
-<li><strong>Automating publication</strong> with CI/CD pipelines</li>
-<li><strong>Treating documentation as a first-class project artifact</strong></li>
-</ul>
-<h2 id="the-tools">The Tools</h2>
-<p>Modern docs-as-code tools have matured significantly:</p>
-<ul>
-<li><strong>MkDocs</strong> – Python-based, fast, great for project documentation and blogs</li>
-<li><strong>Sphinx</strong> – Powerful, rich ecosystem, popular in Python communities</li>
-<li><strong>Docusaurus</strong> – React-based, excellent for developer platforms</li>
-<li><strong>Hugo</strong> – Go-based, extremely fast static site generator</li>
-</ul>
-<p>The right tool depends on your needs, but the philosophy is the same: write in plain text, version in Git, publish automatically.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>Start small. You don't need a complex setup:</p>
+<h1 id="getting-info-from-intervalsicu">Getting info from Intervals.icu</h1>
+<p>You can find your user id and api key in the Settings page:</p>
 <ol>
-<li><strong>Pick a tool</strong> – MkDocs is a great entry point</li>
-<li><strong>Write your documentation</strong> in Markdown</li>
-<li><strong>Set up a simple CI/CD workflow</strong> to publish changes</li>
-<li><strong>Integrate with your development workflow</strong></li>
+<li>Scroll down to Developer Settings.</li>
+<li>Grab your AthleteID.</li>
+<li>Click under<code>API key</code> to generate and copy your API key. </li>
 </ol>
-<p>From there, you can expand with automation, custom themes, and advanced features.</p>
-<hr />
-<p>Have questions about docs-as-code? <a href="../../about/#contact">Get in touch.</a></p></div>
+<h1 id="using-this-script">Using this Script</h1>
+<h2 id="set-up-your-env-file">Set up your .env file.</h2>
+<p>In the root folder for the project:</p>
+<ol>
+<li>Create a file called <code>.env</code></li>
+<li>Paste these lines:
+   <code>INTERVALS_API_KEY=[Paste Your API Key]
+   INTERVALS_ATHLETE_ID=[Paste your Athlete ID]</code></li>
+</ol>
+<h2 id="plan-your-workout-in-csv">Plan your workout in CSV</h2>
+<p>Modify the file workouts.csv and replace the workouts that are there with your own workouts. </p>
+<h3 id="_1"></h3>
+<p>The csv file that stores the workouts is kind of picky. Here's a description from Gemini that hopefully catches the nuances of it:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Requirement</th>
+<th style="text-align: left;">Correct Format</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">2026-02-14</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Places the workout on the correct calendar day.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name &amp; Type</td>
+<td style="text-align: left;">Easy Run, Run</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Identifies the sport and title for your watch.</td>
+</tr>
+<tr>
+<td style="text-align: left;">The Hyphen (-)</td>
+<td style="text-align: left;">- 10km...</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">The Trigger: Without a leading hyphen, no bar graph is created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Target Keyword</td>
+<td style="text-align: left;">...Pace</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Forces the watch to use the Pace Gauge instead of HR/Power.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Repeat Syntax</td>
+<td style="text-align: left;">Repeat 2x</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Creates the nested "skyline" blocks for intervals/hills.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Double Quotes</td>
+<td style="text-align: left;">"..."</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Wraps the text so \n or , don't break the file structure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Step Distance</td>
+<td style="text-align: left;">- 5km...</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Required for Intervals.icu to tally your weekly distance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Broad Ranges</td>
+<td style="text-align: left;">50-90% Pace</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Prevents the watch from "beeping" if you are off-pace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Step Labels</td>
+<td style="text-align: left;">...Hill Effort</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Labels the step on your watch screen (e.g., "Hill Effort").</td>
+</tr>
+<tr>
+<td style="text-align: left;">Coaching Notes</td>
+<td style="text-align: left;">Conversational pace</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Extra text for your reference; does not affect the bar graph.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pro-tip-the-zero-space-rule">Pro-Tip: The "Zero-Space" Rule</h4>
+<p>For the Hyphen requirement, ensure your CSV row looks like this: ...Run,"- 5km Z2 Pace..." If there is even one space like this: " - 5km", the system will treat it as a plain note and will not show the bar graph.</p>
+<h1 id="running-the-script">Running the Script</h1>
+<p>Once everything is set up correctly, just start your python venv and run <code>python upload-plan.py</code></p>
+<p>If everything in the CSV is correct, your workouts will appear in Intervals. </p>
+<h1 id="other-scripts">Other Scripts</h1>
+<p>There are a few other scripts in the project folder: </p>
+<table>
+<thead>
+<tr>
+<th>script name</th>
+<th>purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test-api.py</td>
+<td>run this to make sure your api is set up correctly.</td>
+</tr>
+<tr>
+<td>debug.py</td>
+<td>run this to send a test workout to intervals and pipe the resulting json file to the clipboad. You an use that json output to troubleshoot your csv file.</td>
+</tr>
+<tr>
+<td>delete-plan.py</td>
+<td>Use this to clear previously synced workouts from intervals.icu. This is helpful when you've been uploading a bunch of stuff and need to start over. Adjust the dated in the script as needed</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
