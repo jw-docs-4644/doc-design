@@ -1,4 +1,4 @@
-site_name: Docs-as-Code Consulting
+site_name: Doc Design Consulting
 theme:
   name: mkdocs
 nav:
@@ -8,6 +8,7 @@ nav:
   - Portfolio:
     - Overview: portfolio/index.md
     - Canvas Docs-as-Code:
+      - Case Study: portfolio/canvas-docs-as-code-public/case-study.md
 #      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md
       - Explanation:
         - Why Docs-as-Code for Canvas?: portfolio/canvas-docs-as-code-public/explanation/why-docs-as-code.md
