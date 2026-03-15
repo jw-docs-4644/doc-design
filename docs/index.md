@@ -20,5 +20,3 @@ Check out the [portfolio](portfolio/index.md) section to see samples of my docum
 ## Get Started
 
 [Learn about our services](services.md) or [get in touch](contact.md).
-
-Hi josh!
