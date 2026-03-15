@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Proposed README Updates - Doc Design Consulting</title>
+        <title>Case Study - Doc Design Consulting</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../css/brands.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
                                 <a href="../../../about/" class="nav-link">About</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Portfolio</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Portfolio</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -56,7 +56,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../case-study/" class="dropdown-item">Case Study</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Case Study</a>
 </li>
             
   <li class="dropdown-submenu">
@@ -93,6 +93,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../explanation/why-docs-as-code/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -111,17 +121,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#proposed-readme-updates" class="nav-link">Proposed README Updates</a>
+            <li class="nav-item" data-bs-level="1"><a href="#canvas-docs-as-code-case-study" class="nav-link">Canvas Docs as Code: Case Study</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#specific-changes-to-readmemd" class="nav-link">Specific Changes to README.md</a>
+            <li class="nav-item" data-bs-level="2"><a href="#context" class="nav-link">Context</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#implementation-notes" class="nav-link">Implementation Notes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#challenges" class="nav-link">Challenges</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#design-philosophy" class="nav-link">Design Philosophy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#outcomes" class="nav-link">Outcomes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -132,78 +154,60 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="proposed-readme-updates">Proposed README Updates</h1>
-<p>This document outlines the changes that should be made to README.md to document the multi-course configuration system.</p>
+<h1 id="canvas-docs-as-code-case-study">Canvas Docs as Code: Case Study</h1>
 <h2 id="overview">Overview</h2>
-<p>The codebase has been refactored to support multiple courses in a single repository. The configuration system now:
-- Stores shared Canvas API credentials in a root <code>.env</code> file
-- Stores per-course IDs in each course's <code>course.yaml</code> file
-- Uses an intelligent fallback system for backward compatibility</p>
-<h2 id="specific-changes-to-readmemd">Specific Changes to README.md</h2>
-<h3 id="1-update-setup-section-step-2">1. Update "Setup" Section - Step 2</h3>
-<p><strong>Current text:</strong></p>
-<pre><code>2. Set up your .env file
-
-   1. Copy .env.example to .env
-   2. Get your Canvas API and save it in  .env
-   3. Put the course ID of the course you want in .env as well. **Note: I highly recommend working in a sandbox course if your institution makes them available to you.
-</code></pre>
-<p><strong>Proposed replacement:</strong></p>
-<pre><code>2. Set up your .env file
-
-   1. Copy .env.example to .env
-   2. Get your Canvas API key and save it in .env (CANVAS_API_URL and CANVAS_API_KEY)
-   3. **Note:** COURSE_ID is now stored in each course's `course.yaml` file instead of .env, so it can differ per course. See step 4 below.
-</code></pre>
-<h3 id="2-update-setup-section-step-4-add-to-course-folder-instructions">2. Update "Setup" Section - Step 4 (Add to course folder instructions)</h3>
-<p><strong>Current text:</strong></p>
-<pre><code>   4. Make a copy of the course_template folder and rename it for your course.
-      Your course folder should include the following sub-folders:
-
-      - Assignments
-      - Discussions
-      - Pages
-      - Files
-</code></pre>
-<p><strong>Proposed replacement:</strong></p>
-<pre><code>   4. Make a copy of the course_template folder and rename it for your course.
-      Your course folder should include the following sub-folders:
-
-      - Assignments
-      - Discussions
-      - Pages
-      - Files
-
-      Also, copy `course.yaml.example` to `course.yaml` and add your Canvas course ID to the `course_id` field at the top of the file. **Note: I highly recommend working in a sandbox course if your institution makes them available to you.**
-</code></pre>
-<h3 id="3-replace-configuration-section">3. Replace "Configuration" Section</h3>
-<p><strong>Current text:</strong></p>
-<pre><code>### Configuration
-
-Configure the .env to store your Canvas API key and the ID number for the course you are working on.
-
-&lt;!-- Need to figure out how to handle course-specific ID numbers for individual courses within the Repo. --&gt;
-</code></pre>
-<p><strong>Proposed replacement:</strong></p>
-<pre><code>### Configuration
-
-**Shared credentials** (root .env):
-- Store your Canvas API credentials in the root `.env` file: `CANVAS_API_URL` and `CANVAS_API_KEY`
-- These are shared across all courses in the repository
-
-**Per-course configuration** (course.yaml):
-- Each course folder has its own `course.yaml` file
-- Set the `course_id` field at the top to specify which Canvas course this folder syncs to
-- This allows multiple course folders in the same repository without conflicts
-- The scripts automatically read the course ID from `course.yaml` when available, with fallback to the environment variable for backward compatibility
-</code></pre>
-<h2 id="implementation-notes">Implementation Notes</h2>
+<p>This project uses a docs-as-code philosophy to create course materials for the Canvas Learning Management System. It reduces the time it takes to develop a fully-fleshed out, complex Canvas course from weeks to days. Treating all course materials as code means that coding tools and approaches can make it easier to develop well-thought-out, consistent materials   </p>
+<h2 id="context">Context</h2>
+<p>Most educators work with Canvas through its web interface, which as far as web interface go, is ... fine. But a course of even modest complexity involves interactions among course elements which can quickly become difficult to keep track of, if not completely overwhelming. The Canvas web interface does provide tools to check for broken links and accessibility problems, but no help in actually fixing the problematic course materials. Even worse, working the web interface makes it difficult to implement pedagogical changes in response to student or colleague feedback: If I update the assessment criteria in an assignment prompt, it can be extremely difficult to find and update all of the course materials (drafts, revisions, rubrics. etc.) that are affected by that change. </p>
+<p>All of these factors led to this project. I wanted to be able to write my materials on my laptop and publish a course with a single command. With the help of ChatGPT's web interface, I built a version over winter break of 2025, and used it to publish an Advanced Technical Writing Course. By the time I had begun adapting the scripts to work for my Spring classes, I had discovered LLM-based coding agents and realized that treating course materials like code and then using a coding agent to manage that code creates a truly powerful set of tools for course development.  </p>
+<h2 id="challenges">Challenges</h2>
+<p>To implement this system, I had to solve problems such as 
+- Canvas API interactions
+- Python installation and debugging
+- Version control (Git)</p>
+<h2 id="design-philosophy">Design Philosophy</h2>
+<p>The overarching design philosophy was to make building the course "text-first and local-first." To the extent possible, I wanted to build a system that let teachers write an entire course without making any adjustments in the Canvas web interface. </p>
+<p>As such, the project was guided by well established docs-as-code principles:</p>
 <ul>
-<li>These changes directly address the TODO comment in the original Configuration section</li>
-<li>The new approach is more flexible and allows the repository to handle multiple courses elegantly</li>
-<li>Backward compatibility is maintained: scripts still work if COURSE_ID is defined in .env</li>
-<li>The changes are clear and guide users through the new multi-course workflow</li>
-</ul></div>
+<li>Text based files are source-of-truth:<ul>
+<li>Markdown provides content</li>
+<li>YAML headers provide metadata</li>
+<li>CSV provides rubric information</li>
+</ul>
+</li>
+<li>Materials are<ul>
+<li>topic-based</li>
+<li>structured</li>
+<li>modular</li>
+<li>transparent. Learning materials are kept in a small number of folders with clear labels:<ul>
+<li>Assignments</li>
+<li>Discussions</li>
+<li>Files</li>
+<li>Rubrics</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><em>Note: Quizzes present an obvious gap here. I don't use quizzes much in my teaching, and didn't have any planned for the pilot course, so I did not build any scripts or templates to handle them.</em></p>
+<ul>
+<li>Certain tasks that are exceptionally tedious in the Canvas web UI have been treated with specific scripts:<ul>
+<li>Link checking happens automatically after course sync. Any links that couldn't be resolved are reported to the user for manual correction in Canvas. </li>
+<li>Due dates, point values, and rubric associations can be set for the course as a whole in a single window by launching a python script. </li>
+</ul>
+</li>
+</ul>
+<p>I estimate that the current system is 90% there. (One exception I haven't solved yet involves setting up separate sections and assignments for grad students sections that are layered with undergraduate sections.) </p>
+<h2 id="outcomes">Outcomes</h2>
+<p>The end result works much better than I had originally hoped. When I started, I expected to be able to push assignments to Canvas and then make modifications there. Thanks to the yaml headers in each piece of content, nearly every imaginable box that needs to be ticked in Canvas to make a course actually work for students can be set before publishing. Thanks to LLM-based coding agents, that metadata can easily be adjusted and made consistent across materials. </p>
+<p>Other outcomes: </p>
+<ul>
+<li>Courses can be written in a fraction of the time that it would take to create materials using the Web interface. What takes weeks on the web takes just days in text. </li>
+<li>Materials can be audited and updated with ease, and with the assistance of LLM-based coding agents, finding gaps becomes as easy as asking a question and resolving conflicts becomes absolutely trivial. </li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Ultimately, my goal with this project was to give instructors more control over their materials. I believe that using software development tools and processes helps achieve that goal. Combining those approaches with the right LLM-based coding agent can give instructors the equivalent of a tireless teaching assistant, one who can check spelling and grammar, find broken links, help find and fix accessibility problems in materials, and even help align content to assessment criteria and course outcomes. </p>
+<p>While this project focused on working with Canvas course materials, treating documentation as code can help any organization that struggles with consistency and transparency. I can help build documentation systems that are easier to maintain, audit, and keep consistent <a href="../contact.md">Let me know</a> if you want to talk about solving your own content problems. </p></div>
             </div>
         </div>
 
