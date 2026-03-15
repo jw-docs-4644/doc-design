@@ -5,7 +5,6 @@ nav:
   - Home: index.md
   - Services: services.md
   - About: about.md
-  - Contact: contact.md
   - Portfolio:
     - Overview: portfolio/index.md
     - Canvas Docs-as-Code:
@@ -17,5 +16,6 @@ nav:
 #      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
 #      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
 #    - Intervals.icu: portfolio/intervals-icu/index.md
-  - Blog:
-    - First Post: blog/first-post.md
+#  - Blog:
+#    - First Post: blog/first-post.md
+  - Contact: contact.md

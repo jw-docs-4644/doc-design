@@ -1,6 +1,6 @@
 # Contact
 
-Interested in working together? Shoot me a message:
+Interested in working together? Send me a message:
 
 <form action="https://formspree.io/f/xlgpwobj" method="POST">
   <div style="margin-bottom: 1rem;">
