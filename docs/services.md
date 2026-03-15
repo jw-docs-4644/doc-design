@@ -38,4 +38,4 @@ Get your team up to speed on docs-as-code practices:
 
 ---
 
-**Let's talk about your documentation needs.** [Contact us](about.md#contact)
+**Let's talk about your documentation needs.** [Contact us](contact.md)

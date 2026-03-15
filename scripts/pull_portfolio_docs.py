@@ -43,7 +43,7 @@ def sync_project(project_name: str, repo_url: str, source_path: str) -> None:
     if repo_dir.exists():
         print(f"  → Updating existing repo...")
         subprocess.run(
-            ["git", "pull", "origin", "main"],
+            ["git", "pull"],
             cwd=repo_dir,
             check=True,
             capture_output=True,

@@ -21,12 +21,5 @@ Below are some of my own projects that use a docs-as-code approach:
 - **Canvas API Scripts** – Utilities for working with Canvas LMS API
 - **Intervals.icu Uploader** – Automation tool for managing workout plans
 
-Browse the [portfolio](portfolio/) to see more.
+Browse the [portfolio](portfolio/index.md) to see more.
 
----
-
-## Contact
-
-Interested in working together? Reach out at [josh.welsh@fastmail.com](mailto:josh.welsh@fastmail.com)
-
-- [LinkedIn](www.linkedin.com/in/joshua-welsh-5116a027)

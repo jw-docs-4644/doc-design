@@ -5,11 +5,17 @@ nav:
   - Home: index.md
   - Services: services.md
   - About: about.md
+  - Contact: contact.md
   - Portfolio:
     - Overview: portfolio/index.md
     - Canvas Docs-as-Code:
-      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md
-      - Multi-Machine Setup: portfolio/canvas-docs-as-code-public/multi_machine_setup.md
-    - Intervals.icu: portfolio/intervals-icu/index.md
+#      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md
+      - Explanation:
+        - Why Docs-as-Code for Canvas?: portfolio/canvas-docs-as-code-public/explanation/why-docs-as-code.md
+      - How-To:
+        - Using Rubrics: portfolio/canvas-docs-as-code-public/how-to/using-rubrics.md
+#      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
+#      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
+#    - Intervals.icu: portfolio/intervals-icu/index.md
   - Blog:
     - First Post: blog/first-post.md

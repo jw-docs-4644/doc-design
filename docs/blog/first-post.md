@@ -42,4 +42,4 @@ From there, you can expand with automation, custom themes, and advanced features
 
 ---
 
-Have questions about docs-as-code? [Get in touch.](../about.md#contact)
+Have questions about docs-as-code? [Get in touch.](../contact.md)
