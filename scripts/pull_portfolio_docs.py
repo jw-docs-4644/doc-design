@@ -76,11 +76,9 @@ def sync_project(project_name: str, repo_url: str, source_path: str) -> None:
         print(f"  ⚠️  No {source_path}/ folder found in {project_name}")
         return
 
-    # Remove old portfolio version and copy new one
-    if project_dir.exists():
-        shutil.rmtree(project_dir)
-
-    shutil.copytree(source_docs, project_dir)
+    # Copy from source, preserving local-only files
+    project_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(source_docs, project_dir, dirs_exist_ok=True)
     print(f"  ✓ Synced to docs/portfolio/{project_name}/")
 
 
