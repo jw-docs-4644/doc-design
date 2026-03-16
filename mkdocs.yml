@@ -13,7 +13,9 @@ nav:
       - Explanation:
         - Why Docs-as-Code for Canvas?: portfolio/canvas-docs-as-code-public/explanation/why-docs-as-code.md
       - How-To:
-        - Using Rubrics: portfolio/canvas-docs-as-code-public/how-to/using-rubrics.md
+        - Set Up Canvas Docs-as-Code: portfolio/canvas-docs-as-code-public/how-to/setting-up.md
+        - Use the Course Extractor: portfolio/canvas-docs-as-code-public/how-to/extracting-course.md
+        - Attach and Manage Rubrics: portfolio/canvas-docs-as-code-public/how-to/using-rubrics.md
 #      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
 #      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
 #    - Intervals.icu: portfolio/intervals-icu/index.md
