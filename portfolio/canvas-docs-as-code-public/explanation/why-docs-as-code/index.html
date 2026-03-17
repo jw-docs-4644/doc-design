@@ -66,6 +66,14 @@
 <li>
     <a href="./" class="dropdown-item active" aria-current="page">Why Docs-as-Code for Canvas?</a>
 </li>
+            
+<li>
+    <a href="../llms-and-teaching/" class="dropdown-item">Large Language Models and Teaching</a>
+</li>
+            
+<li>
+    <a href="../zotero-integration/" class="dropdown-item">Zotero Integration</a>
+</li>
     </ul>
   </li>
             
@@ -83,6 +91,16 @@
             
 <li>
     <a href="../../how-to/using-rubrics/" class="dropdown-item">Attach and Manage Rubrics</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Reference</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../reference/scripts/" class="dropdown-item">Scripts</a>
 </li>
     </ul>
   </li>
@@ -107,7 +125,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../how-to/setting-up/" class="nav-link">
+                                <a rel="next" href="../llms-and-teaching/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -150,27 +168,6 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#docs-as-code-and-llm-coding-agents" class="nav-link">Docs as Code and LLM Coding Agents</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#llms-and-teaching" class="nav-link">LLMs and Teaching</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#what-role-should-llms-play-in-teaching" class="nav-link">What Role Should LLMs Play in Teaching?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#advantages-of-automation" class="nav-link">Advantages of Automation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#the-importance-of-context" class="nav-link">The Importance of Context</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#watch-out-for-bullshit" class="nav-link">Watch Out for Bullshit</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -226,39 +223,7 @@ approach reveals its true potential. Now instead of simply updating a
 term in your rubrics, you can make changes to an assignment, then ask
 the coding agent to check the rubric for consistency. Or you can have
 the coding agent change all of your discussion prompts from pass/fail to
-graded by points.</p>
-<h1 id="llms-and-teaching">LLMs and Teaching</h1>
-<p>I believe that we should be very careful when we integrate Large
-Language Models (LLMs) into our teaching. Students don't want to read AI
-Slop any more than we do, and their slop detectors are just as finely
-tuned as ours are. In ethical terms, using AI in this manor fails our
-responsibilities to our students. In pragematic terms, we will lose
-credibility with our student if they think ChatGPT or Claude has written
-our assignments or is providing feedback on their work. Marc Watkins has
-a great <a href="https://marcwatkins.substack.com/p/the-dangers-of-using-ai-to-grade">substack article on the risks of AI
-grading</a>.</p>
-<p>On a much deeper, philosophical level, I believe that we create our
-selves through our experiences with the world and with other people.
-When we cede important human interactions to machines, we lose the
-chance to (re)form ourselves, which to me seems like a great tragedy.</p>
-<p>Nevertheless, I do think that LLMs can play a role in course development
-that is ethically, pragmatically, and ontologically sound.</p>
-<h2 id="what-role-should-llms-play-in-teaching">What Role <em>Should</em> LLMs Play in Teaching?</h2>
-<p>Large Language Models are great at working with text, so long as the
-work does not require the making of meaning. LLM-based coding agents
-combined with a docs-as-code approach to course development enable an
-incredible amount of control over course materials.</p>
-<h2 id="advantages-of-automation">Advantages of Automation</h2>
-<p>Once the "source of truth" for your course lives in the text-based Markdown files on your computer, some of the affordances of working with Large Language Models start to become clear. For example, instead of using a command like</p>
-<p><code>find . -type f \( -name '*.md' -o -name '*.yml' -o -name '*.yaml' \) -print0 \
-  | xargs -0 sed -i -E 's/(grading_type:[[:space:]]*)letter_grade/\1points/g'</code></p>
-<p>which would could be used to change the grading type for all of your assignments from letter grade to points, you can simply tell your coding agent something like</p>
-<p><code>Change the grading type for everything in Assignemnts and Discussions from letter grade to points</code></p>
-<p>Similarly, if you make changes to an assignment and forget to update the rubric you can ask your coding agent something like</p>
-<p><code>Review Assignment X and check its rubric. Is everything up to date?</code></p>
-<p>In my own course prep, I have also found coding agents to be helpful in providing feedback on materials, helping me uncover inconsistencies and assumptions that I had left in prompts because of the blind spots that come from being too close to a topic. </p>
-<h2 id="the-importance-of-context">The Importance of Context</h2>
-<h2 id="watch-out-for-bullshit">Watch Out for Bullshit</h2></div>
+graded by points.</p></div>
             </div>
         </div>
 

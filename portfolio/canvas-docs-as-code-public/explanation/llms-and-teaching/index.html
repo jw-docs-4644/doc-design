@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Use the Course Extractor - Doc Design Consulting</title>
+        <title>Large Language Models and Teaching - Doc Design Consulting</title>
         <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../../css/brands.min.css" rel="stylesheet">
@@ -64,15 +64,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../explanation/why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
+    <a href="../why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
 </li>
             
 <li>
-    <a href="../../explanation/llms-and-teaching/" class="dropdown-item">Large Language Models and Teaching</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Large Language Models and Teaching</a>
 </li>
             
 <li>
-    <a href="../../explanation/zotero-integration/" class="dropdown-item">Zotero Integration</a>
+    <a href="../zotero-integration/" class="dropdown-item">Zotero Integration</a>
 </li>
     </ul>
   </li>
@@ -82,15 +82,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../setting-up/" class="dropdown-item">Set Up Canvas Docs-as-Code</a>
+    <a href="../../how-to/setting-up/" class="dropdown-item">Set Up Canvas Docs-as-Code</a>
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Use the Course Extractor</a>
+    <a href="../../how-to/extracting-course/" class="dropdown-item">Use the Course Extractor</a>
 </li>
             
 <li>
-    <a href="../using-rubrics/" class="dropdown-item">Attach and Manage Rubrics</a>
+    <a href="../../how-to/using-rubrics/" class="dropdown-item">Attach and Manage Rubrics</a>
 </li>
     </ul>
   </li>
@@ -120,12 +120,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../setting-up/" class="nav-link">
+                                <a rel="prev" href="../why-docs-as-code/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../using-rubrics/" class="nav-link">
+                                <a rel="next" href="../zotero-integration/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -147,8 +147,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#extracting-a-course" class="nav-link">Extracting a Course</a>
+            <li class="nav-item" data-bs-level="1"><a href="#large-language-models-and-teaching" class="nav-link">Large Language Models and Teaching</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-role-should-llms-play-in-teaching" class="nav-link">What Role Should LLMs Play in Teaching?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#advantages-of-automation" class="nav-link">Advantages of Automation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-importance-of-the-rhetorical-situation" class="nav-link">The Importance of the Rhetorical Situation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#watch-out-for-bullshit" class="nav-link">Watch Out for Bullshit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -156,20 +172,44 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="extracting-a-course">Extracting a Course</h1>
-<p>You can use the course extractor to convert an existing course to Markdown and save it to your computer. This can be handy when you're making modifications to an existing course. </p>
-<p>Follow these steps: </p>
-<ol>
-<li>Run <code>python3 extract_course.py</code></li>
-<li>Follow the prompts to find the course you want to extract. </li>
-<li>Accept the default folder name and path for the extract or specify a different path if you prefer. </li>
-</ol>
-<p>Results: </p>
-<ul>
-<li>Assignments, Discussions, Pages, Files, and Rubrics for the course will all be downloaded to the specified path.</li>
-<li>Course settings are saved the course root folder to a file called "course.yaml." </li>
-</ul>
-<p>You can modify these files and re-sync your course content by running <code>sync_all.sh</code></p></div>
+<h1 id="large-language-models-and-teaching">Large Language Models and Teaching</h1>
+<p>I believe that we should be very careful when we integrate Large
+Language Models (LLMs) into our teaching. Students don't want to read AI
+Slop any more than we do, and their slop detectors are just as finely
+tuned as ours are. In ethical terms, using AI in this manner fails our
+responsibilities to our students. In pragmatic terms, we will lose
+credibility with our students if they think ChatGPT or Claude has written
+our assignments or is providing feedback on their work. Marc Watkins has
+a great <a href="https://marcwatkins.substack.com/p/the-dangers-of-using-ai-to-grade">substack article on the risks of AI
+grading</a>.</p>
+<p>On a much deeper, philosophical level, I believe that we create ourselves through our experiences with the world and with other people.
+When we cede important human interactions to machines, we lose the
+chance to (re)form ourselves, which to me seems like a great tragedy.</p>
+<p>Nevertheless, I do think that LLMs can play a role in course development
+that is ethically, pragmatically, and ontologically sound.</p>
+<h2 id="what-role-should-llms-play-in-teaching">What Role <em>Should</em> LLMs Play in Teaching?</h2>
+<p>Large Language Models are great at working with text, so long as the
+work does not require the making of meaning. LLM-based coding agents
+combined with a docs-as-code approach to course development enable an
+incredible amount of control over course materials.</p>
+<h2 id="advantages-of-automation">Advantages of Automation</h2>
+<p>Once the "source of truth" for your course lives in the text-based Markdown files on your computer, some of the affordances of working with Large Language Models start to become clear. For example, instead of using a command like</p>
+<p><code>find . -type f \( -name '*.md' -o -name '*.yml' -o -name '*.yaml' \) -print0 \
+  | xargs -0 sed -i -E 's/(grading_type:[[:space:]]*)letter_grade/\1points/g'</code></p>
+<p>which could be used to change the grading type for all of your assignments from letter grade to points, you can simply tell your coding agent something like</p>
+<p><code>Change the grading type for everything in Assignments and Discussions from letter grade to points</code></p>
+<p>Similarly, if you make changes to an assignment and forget to update the rubric you can ask your coding agent something like</p>
+<p><code>Review Assignment X and check its rubric. Is everything up to date?</code></p>
+<p>In my own course prep, I have also found coding agents to be helpful in providing feedback on materials, helping me uncover inconsistencies and assumptions that I had left in prompts because of the blind spots that come from being too close to a topic. </p>
+<h2 id="the-importance-of-the-rhetorical-situation">The Importance of the Rhetorical Situation</h2>
+<p>Any time we engage with Large Language Models, it is important to keep the rhetorical situation in mind. This means reminding yourself and the LLM about purpose, audience, and context on a regular basis. Including contextual cues in prompts and responses helps to keep the writing produced by LLMs anchored in the rhetorical choices of human authors. </p>
+<p>Alan Knowles describes "Human in the Loop" and "Machine in the Loop" writing as different, depending on how much control each side of the scale has over the final product. </p>
+<p>"Machine in the Loop" writing happens when computers assist with writing tasks, but humans are in the driver's seat, making rhetorical choices appropriate to the situation. Writing that is closer to the "Human in the Loop" side of the balance flips the ratio of choice and allows an LLM to create text that tends to disengage itself from the concerns and situations of human beings. This is not the kind of writing that will help us build relationships with our students, and so it will not help their learning. For more on this way of thinking about LLM writing, see <a href="https://doi.org/10.1016/j.compcom.2024.102826">Alan Knowles' 2024 article</a> in <em>Computers and Composition</em>.</p>
+<h2 id="watch-out-for-bullshit">Watch Out for Bullshit</h2>
+<p>Finally, it is crucial to recognize that Large Language Models do not really care whether the text they produce is factually accurate. 
+Hicks et al. <a href="https://doi.org/10.1007/s10676-024-09775-5">describe ChatGPT specifically as a bullshit machine</a>.
+I use LLM-coding agents quite a bit in my course prep and other projects, and I can attest to the danger that can arise if we take LLM-generated output as any sort of truth, let alone Truth. 
+Luckily, attending to the rhetorical situation provides one mitigation to the bullshit potential of LLMs. As we prepare course materials and teach writing to our students, we should keep this perspective in mind </p></div>
             </div>
         </div>
 
