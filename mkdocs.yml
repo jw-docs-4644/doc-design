@@ -12,10 +12,14 @@ nav:
 #      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md
       - Explanation:
         - Why Docs-as-Code for Canvas?: portfolio/canvas-docs-as-code-public/explanation/why-docs-as-code.md
+        - Large Language Models and Teaching: portfolio/canvas-docs-as-code-public/explanation/llms-and-teaching.md
+        - Zotero Integration: portfolio/canvas-docs-as-code-public/explanation/zotero-integration.md
       - How-To:
         - Set Up Canvas Docs-as-Code: portfolio/canvas-docs-as-code-public/how-to/setting-up.md
         - Use the Course Extractor: portfolio/canvas-docs-as-code-public/how-to/extracting-course.md
         - Attach and Manage Rubrics: portfolio/canvas-docs-as-code-public/how-to/using-rubrics.md
+      - Reference:
+        - Scripts: portfolio/canvas-docs-as-code-public/reference/scripts.md
 #      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
 #      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
 #    - Intervals.icu: portfolio/intervals-icu/index.md
