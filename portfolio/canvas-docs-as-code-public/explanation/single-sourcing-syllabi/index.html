@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Why Docs-as-Code for Canvas? - Doc Design Consulting</title>
+        <title>Single Sourcing Syllabi - Doc Design Consulting</title>
         <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../../css/brands.min.css" rel="stylesheet">
@@ -64,7 +64,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Why Docs-as-Code for Canvas?</a>
+    <a href="../why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
 </li>
             
 <li>
@@ -76,7 +76,7 @@
 </li>
             
 <li>
-    <a href="../single-sourcing-syllabi/" class="dropdown-item">Single Sourcing Syllabi</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Single Sourcing Syllabi</a>
 </li>
     </ul>
   </li>
@@ -124,12 +124,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../case-study/" class="nav-link">
+                                <a rel="prev" href="../zotero-integration/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../llms-and-teaching/" class="nav-link">
+                                <a rel="next" href="../../how-to/setting-up/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -151,27 +151,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#why-docs-as-code-for-canvas" class="nav-link">Why Docs-as-Code for Canvas?</a>
+            <li class="nav-item" data-bs-level="1"><a href="#single-sourcing-syllabi" class="nav-link">Single Sourcing Syllabi</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#why-treat-documentation-as-code" class="nav-link">Why Treat Documentation as Code?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#docs-as-code-and-course-development" class="nav-link">Docs as Code and Course Development</a>
+            <li class="nav-item" data-bs-level="2"><a href="#topic-based-authoring" class="nav-link">Topic-Based Authoring</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#docs-as-code-tools" class="nav-link">Docs-as-Code Tools</a>
+            <li class="nav-item" data-bs-level="2"><a href="#single-source-multiple-outputs" class="nav-link">Single Source, Multiple Outputs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#docs-as-code-and-llm-coding-agents" class="nav-link">Docs as Code and LLM Coding Agents</a>
+            <li class="nav-item" data-bs-level="2"><a href="#topic-locations" class="nav-link">Topic Locations</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -179,55 +176,128 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="why-docs-as-code-for-canvas">Why Docs-as-Code for Canvas?</h1>
-<p>Docs as Code is an approach to technical documentation that asks writers to use the same tools and processes that software developers use. </p>
-<h2 id="why-treat-documentation-as-code">Why Treat Documentation as Code?</h2>
-<p>Treating documentation like code lets the documentation work fit more cleanly into the development process. When documentation is built using the same tools as the software it supports, it integrated more easily into the system.</p>
-<h1 id="docs-as-code-and-course-development">Docs as Code and Course Development</h1>
-<p>Applying a docs-as-code philosophy
-to course development unlocks the power of plain text and gives you much more control over your course than you'd get using traditional development tools.</p>
-<p>The scripts in the canvas-docs-as-code-public repository let you write your course on your local machine, create due dates, assign points values, set peer review options, and
-then push all of your content to Canvas with a single command. The publish script will also check for broken links, and update links to match the course you
-are pushing to.</p>
-<p>Since everything lives in just a few folders on your computer, it is much easier to make global changes. For example, all of the rubrics are kept in a single CSV spreadsheet. If you decide to change a feedback
-term from "Unsatisfactory" to "Needs Significant Development" all it takes is a single Find &amp; Replace.</p>
-<h1 id="docs-as-code-tools">Docs-as-Code Tools</h1>
-<p>Docs as Code uses different kinds of tools than are usually found in
-"traditional" documentation systems. This table offers a comparison of
-some of the more commonly used tools:</p>
+<h1 id="single-sourcing-syllabi">Single Sourcing Syllabi</h1>
+<p>Using a docs-as-code approach for course materials makes it relatively straightforward to take a single-source approach to syllabi. This means that a single source file can be used to generate printed syllabi as well as Canvas pages. Similarly, "boilerplate" and other recycled content can live in a single location. So for example, if your attendance policy is the same in all of your face-to-face classes, you can keep one file in a shared folder that covers this topic and then use it the syllabi for various courses. This explanation covers the basic concepts behind this approach, and how they work in the Canvas Docs as Code Project.</p>
+<h2 id="topic-based-authoring">Topic-Based Authoring</h2>
+<p>Topic-based authoring is a way of thinking about documentation in terms of the individual topics that might make up a document, instead of thinking about the finished documents themselves. Syllabi present a great example of topic-based authoring, since so much of their content is topical and re-used across multiple courses. </p>
+<p>The following table outlines a few possible topics for a syllabus, as well as whether each topic might be thought of as <em>shared</em> across multiple courses or <em>unique</em> to a specific course. (Naturally, whether a topic is unique will depend on a variety of factors. For example, if I'm teaching multiple sections of the same course, then Course Outcomes might be shared. If not, then they'll probably be unique.)</p>
 <table>
 <thead>
 <tr>
-<th>Purpose</th>
-<th>Docs-as-Code Tools</th>
-<th>Traditional Documentation Tools</th>
+<th>Topic</th>
+<th>Shared or Unique</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Document Creation</td>
-<td>Plain-text editors such as Gedit or Micro or Markdown editors such as Typedown or Ulysses</td>
-<td>Word processors such as Microsoft Word, OpenOffice, or even Google Docs.</td>
+<td>Course Name</td>
+<td>Unique</td>
 </tr>
 <tr>
-<td>Version Control</td>
-<td>Git, Subversion</td>
-<td>File syncing services such as OneDrive, Google Drive, or Dropbox.</td>
+<td>Meeting Place and Time</td>
+<td>Unique</td>
 </tr>
 <tr>
-<td>Automation</td>
-<td>Scripting Languages such as Python or LLM tools such as Cluade CLI</td>
-<td>Macros in Word or OpenOffice.</td>
+<td>Instructor Name and Contact Info</td>
+<td>Shared</td>
+</tr>
+<tr>
+<td>Course Outcomes</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Attendance Policy</td>
+<td>Shared</td>
+</tr>
+<tr>
+<td>Grading Policy</td>
+<td>Shared</td>
+</tr>
+<tr>
+<td>Drafts and Revisions</td>
+<td>Shared</td>
+</tr>
+<tr>
+<td>Reading Calendar</td>
+<td>Unique</td>
 </tr>
 </tbody>
 </table>
-<h1 id="docs-as-code-and-llm-coding-agents">Docs as Code and LLM Coding Agents</h1>
-<p>Once LLM-based Coding Agents enter the picture, the docs-as-code
-approach reveals its true potential. Now instead of simply updating a
-term in your rubrics, you can make changes to an assignment, then ask
-the coding agent to check the rubric for consistency. Or you can have
-the coding agent change all of your discussion prompts from pass/fail to
-graded by points.</p></div>
+<p>Hopefully this small set of examples makes it clear how beneficial it can be think of syllabi in terms of topics. If I decide to make a change to my attendance policy, I can do that once and let that topic be used to generate consistent syllabi for all of my relevant classes. </p>
+<p>The syllabus is created by using <a href="../how-to/how-to-use-pandoc-and-yaml.md">pandoc and a default file written in yaml</a>. </p>
+<h2 id="single-source-multiple-outputs">Single Source, Multiple Outputs</h2>
+<p>Another thing we can do with syllabus topics is to push some or all of them to individual Canvas pages. For example, I use the same approach to drafts and revisions in all of my classes, and I like to have that information in a "Getting Started" module on Canvas. I can use the course.yaml file to grab whichever topics I choose from my syllabus folders and put them in that module.</p>
+<p>The extra columns in the table below suggests a possible set of outputs for our hypothetical syllabus topics:</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Shared or Unique</th>
+<th>Send to Syllabus</th>
+<th>Send to Canvas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Course Name</td>
+<td>Unique</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Meeting Place and Time</td>
+<td>Unique</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Instructor Name and Contact Info</td>
+<td>Shared</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Course Outcomes</td>
+<td>Unique</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Attendance Policy</td>
+<td>Shared</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Grading Policy</td>
+<td>Shared</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Drafts and Revisions</td>
+<td>Shared</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Reading Calendar</td>
+<td>Unique</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Topics are added to the modules page by putting them in the course.yaml file in the course root folder.</p>
+<h2 id="topic-locations">Topic Locations</h2>
+<p>The default structure of the Canvas Docs as Code Project assumes the following locations for syllabus and Canvas topics:</p>
+<ul>
+<li>Shared topics: canvas-docs-as-code/_shared/syllabus/topics</li>
+<li>Course-specific topics: [course root folder]/Pages/Syllabus_topics</li>
+</ul>
+<p>If you want to store topics in other locations, you will need to update your course.yaml file and perhaps make adjustments to the sync_pages.py script. </p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Clearly this will require more organization and set up time than it would take to just write a syllabus in Word. But once the organizational structure has been worked out, it will be much easier to keep syllabi consistent and up to date across courses. </p></div>
             </div>
         </div>
 
