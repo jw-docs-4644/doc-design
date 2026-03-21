@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Use Pandoc and yaml to Generate Syllabi. - Doc Design Consulting</title>
+        <title>Plan Your Workouts - Doc Design Consulting</title>
         <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../../css/brands.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
                                 <a href="../../../../about/" class="nav-link">About</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Portfolio</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Portfolio</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -56,7 +56,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../case-study/" class="dropdown-item">Case Study</a>
+    <a href="../../../canvas-docs-as-code-public/case-study/" class="dropdown-item">Case Study</a>
 </li>
             
   <li class="dropdown-submenu">
@@ -64,19 +64,19 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../explanation/why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
+    <a href="../../../canvas-docs-as-code-public/explanation/why-docs-as-code/" class="dropdown-item">Why Docs-as-Code for Canvas?</a>
 </li>
             
 <li>
-    <a href="../../explanation/llms-and-teaching/" class="dropdown-item">Large Language Models and Teaching</a>
+    <a href="../../../canvas-docs-as-code-public/explanation/llms-and-teaching/" class="dropdown-item">Large Language Models and Teaching</a>
 </li>
             
 <li>
-    <a href="../../explanation/zotero-integration/" class="dropdown-item">Zotero Integration</a>
+    <a href="../../../canvas-docs-as-code-public/explanation/zotero-integration/" class="dropdown-item">Zotero Integration</a>
 </li>
             
 <li>
-    <a href="../../explanation/single-sourcing-syllabi/" class="dropdown-item">Single Sourcing Syllabi</a>
+    <a href="../../../canvas-docs-as-code-public/explanation/single-sourcing-syllabi/" class="dropdown-item">Single Sourcing Syllabi</a>
 </li>
     </ul>
   </li>
@@ -86,15 +86,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../setting-up/" class="dropdown-item">Set Up Canvas Docs-as-Code</a>
+    <a href="../../../canvas-docs-as-code-public/how-to/setting-up/" class="dropdown-item">Set Up Canvas Docs-as-Code</a>
 </li>
             
 <li>
-    <a href="../extracting-course/" class="dropdown-item">Use the Course Extractor</a>
+    <a href="../../../canvas-docs-as-code-public/how-to/extracting-course/" class="dropdown-item">Use the Course Extractor</a>
 </li>
             
 <li>
-    <a href="../using-rubrics/" class="dropdown-item">Attach and Manage Rubrics</a>
+    <a href="../../../canvas-docs-as-code-public/how-to/using-rubrics/" class="dropdown-item">Attach and Manage Rubrics</a>
 </li>
     </ul>
   </li>
@@ -104,7 +104,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../reference/scripts/" class="dropdown-item">Scripts</a>
+    <a href="../../../canvas-docs-as-code-public/reference/scripts/" class="dropdown-item">Scripts</a>
 </li>
     </ul>
   </li>
@@ -116,7 +116,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../../intervals-icu/" class="dropdown-item">Overview</a>
+    <a href="../../" class="dropdown-item">Overview</a>
 </li>
             
   <li class="dropdown-submenu">
@@ -124,15 +124,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../../intervals-icu/how-to/setting-up/" class="dropdown-item">Set Up the Script</a>
+    <a href="../setting-up/" class="dropdown-item">Set Up the Script</a>
 </li>
             
 <li>
-    <a href="../../../intervals-icu/how-to/planning-workouts/" class="dropdown-item">Plan Your Workouts</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Plan Your Workouts</a>
 </li>
             
 <li>
-    <a href="../../../intervals-icu/how-to/running-the-script/" class="dropdown-item">Run the Script</a>
+    <a href="../running-the-script/" class="dropdown-item">Run the Script</a>
 </li>
     </ul>
   </li>
@@ -142,7 +142,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../../intervals-icu/reference/scripts/" class="dropdown-item">Scripts</a>
+    <a href="../../reference/scripts/" class="dropdown-item">Scripts</a>
 </li>
     </ul>
   </li>
@@ -161,6 +161,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../setting-up/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../running-the-script/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -179,7 +189,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#use-pandoc-and-yaml-to-generate-syllabi" class="nav-link">Use Pandoc and yaml to Generate Syllabi.</a>
+            <li class="nav-item" data-bs-level="2"><a href="#plan-your-workout-in-csv" class="nav-link">Plan your workout in CSV</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -188,24 +198,84 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="use-pandoc-and-yaml-to-generate-syllabi">Use Pandoc and yaml to Generate Syllabi.</h1>
-<p>!! This is under deverlopment!!!</p>
-<p>I'm working out a way for syllabus topics to be single sources and used in multiple places. It turned out to be more complicated than I thought. But I think I got it figured out. </p>
-<ul>
-<li>Root folder contains a subfolder called _shared/syllabus/topics</li>
-<li>
-<p>In this folder live topics that you want to use in more than one class. </p>
-</li>
-<li>
-<p>your class folder has a folder called ?Pages/Syllabus_topics</p>
-</li>
-<li>In this folder live MD files with course-specific information: Course OUtcomes, Reading Calendars, etc. </li>
-</ul>
-<p>-course.yaml
-    -This builds the modules layout for canvas. It pulls pages and lists them. It assumes that pages are in Pages or a subfolder.
-    - You can tell it to look in _shared/syllabus/topics by listing source: shared inside  the item block (See structure in sample course.yaml.)</p>
-<p>the logic for this has been updated in sync_pages.py</p>
-<p>-defaults-yaml (or maybe we give it a better name? ) can be used to build printed syllabi. These can pull from the shared topics as well as Pages. It lives in course root/Syllabus</p></div>
+<h2 id="plan-your-workout-in-csv">Plan your workout in CSV</h2>
+<p>Modify the file workouts.csv and replace the workouts that are there with your own workouts.</p>
+<h3 id="_1"></h3>
+<p>The csv file that stores the workouts is kind of picky. Here's a description from Gemini that hopefully catches the nuances of it:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Requirement</th>
+<th style="text-align: left;">Correct Format</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">2026-02-14</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Places the workout on the correct calendar day.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name &amp; Type</td>
+<td style="text-align: left;">Easy Run, Run</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Identifies the sport and title for your watch.</td>
+</tr>
+<tr>
+<td style="text-align: left;">The Hyphen (-)</td>
+<td style="text-align: left;">- 10km...</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">The Trigger: Without a leading hyphen, no bar graph is created.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Target Keyword</td>
+<td style="text-align: left;">...Pace</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Forces the watch to use the Pace Gauge instead of HR/Power.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Repeat Syntax</td>
+<td style="text-align: left;">Repeat 2x</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Creates the nested "skyline" blocks for intervals/hills.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Double Quotes</td>
+<td style="text-align: left;">"..."</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Wraps the text so \n or , don't break the file structure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Step Distance</td>
+<td style="text-align: left;">- 5km...</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Required for Intervals.icu to tally your weekly distance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Broad Ranges</td>
+<td style="text-align: left;">50-90% Pace</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Prevents the watch from "beeping" if you are off-pace.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Step Labels</td>
+<td style="text-align: left;">...Hill Effort</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Labels the step on your watch screen (e.g., "Hill Effort").</td>
+</tr>
+<tr>
+<td style="text-align: left;">Coaching Notes</td>
+<td style="text-align: left;">Conversational pace</td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Extra text for your reference; does not affect the bar graph.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pro-tip-the-zero-space-rule">Pro-Tip: The "Zero-Space" Rule</h4>
+<p>For the Hyphen requirement, ensure your CSV row looks like this: ...Run,"- 5km Z2 Pace..." If there is even one space like this: " - 5km", the system will treat it as a plain note and will not show the bar graph.</p></div>
             </div>
         </div>
 

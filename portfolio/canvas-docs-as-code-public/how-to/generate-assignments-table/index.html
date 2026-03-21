@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Use Pandoc and yaml to Generate Syllabi. - Doc Design Consulting</title>
+        <title>Generate a Table of Assignments - Doc Design Consulting</title>
         <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../../../css/brands.min.css" rel="stylesheet">
@@ -179,7 +179,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#use-pandoc-and-yaml-to-generate-syllabi" class="nav-link">Use Pandoc and yaml to Generate Syllabi.</a>
+            <li class="nav-item" data-bs-level="1"><a href="#generate-a-table-of-assignments" class="nav-link">Generate a Table of Assignments</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -188,24 +188,13 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="use-pandoc-and-yaml-to-generate-syllabi">Use Pandoc and yaml to Generate Syllabi.</h1>
-<p>!! This is under deverlopment!!!</p>
-<p>I'm working out a way for syllabus topics to be single sources and used in multiple places. It turned out to be more complicated than I thought. But I think I got it figured out. </p>
-<ul>
-<li>Root folder contains a subfolder called _shared/syllabus/topics</li>
-<li>
-<p>In this folder live topics that you want to use in more than one class. </p>
-</li>
-<li>
-<p>your class folder has a folder called ?Pages/Syllabus_topics</p>
-</li>
-<li>In this folder live MD files with course-specific information: Course OUtcomes, Reading Calendars, etc. </li>
-</ul>
-<p>-course.yaml
-    -This builds the modules layout for canvas. It pulls pages and lists them. It assumes that pages are in Pages or a subfolder.
-    - You can tell it to look in _shared/syllabus/topics by listing source: shared inside  the item block (See structure in sample course.yaml.)</p>
-<p>the logic for this has been updated in sync_pages.py</p>
-<p>-defaults-yaml (or maybe we give it a better name? ) can be used to build printed syllabi. These can pull from the shared topics as well as Pages. It lives in course root/Syllabus</p></div>
+<h1 id="generate-a-table-of-assignments">Generate a Table of Assignments</h1>
+<p>One of the coolest things about treating your course content as code is that you can use the information in the content itself to do things. If you have set up points metadata in the YAML headers, for example, you can use that information to generate a table of a assigments to include in your syllabus.</p>
+<p>To do this, you have to navigate to the relevant course folder and then run the script generate_grade_table.py, which lives in the utility_scripts folder.</p>
+<p>In Linux or macOS:</p>
+<p><code>python3 ../utility_scripts/generate_grade_table.py</code></p>
+<p>On Windows:</p>
+<p><code>python3 ..\utility_scripts\generate_grade_table.py</code></p></div>
             </div>
         </div>
 
