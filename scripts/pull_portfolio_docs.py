@@ -19,7 +19,7 @@ PORTFOLIO_PROJECTS = {
     ),
     "intervals-icu": (
         "https://github.com/jw-docs-4644/intervals-icu.git",
-        None,  # Special case: build docs from README
+        "docs",
     ),
 }
 

@@ -23,7 +23,14 @@ nav:
         - Scripts: portfolio/canvas-docs-as-code-public/reference/scripts.md
 #      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
 #      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
-#    - Intervals.icu: portfolio/intervals-icu/index.md
+    - Intervals.icu:
+      - Overview: portfolio/intervals-icu/index.md
+      - How-To:
+        - Set Up the Script: portfolio/intervals-icu/how-to/setting-up.md
+        - Plan Your Workouts: portfolio/intervals-icu/how-to/planning-workouts.md
+        - Run the Script: portfolio/intervals-icu/how-to/running-the-script.md
+      - Reference:
+        - Scripts: portfolio/intervals-icu/reference/scripts.md
 #  - Blog:
 #    - First Post: blog/first-post.md
   - Contact: contact.md
