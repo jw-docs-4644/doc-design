@@ -1,8 +1,8 @@
 # My School Menus TRMNL Plugin Integration
 
-The My School Menus plugin for [TRMNL device](www.trmnl.com) provides a great example of the advantages that can arise when docs are treated like code.   
+The My School Menus plugin for the [TRMNL device](https://www.trmnl.com) provides a great example of the advantages that can arise when docs are treated like code.   
 
-My School Menus provides menu information for 1,680 school districts across the country. Because the menu information is stored in an accessible format, it can be easily extracted and displayed on the TRMNL. I use this plugin to show the family what's for hot lunch everyone morning. TRMNL displays the lunch informatino on a screen next to the weather and our daily calendar. 
+[My School Menus](https://myschoolmenus.com) provides menu information for 1,680 school districts across the country. Because the menu information is stored in an accessible format, it can be easily extracted and displayed on the TRMNL. I use this plugin to show the family what's for hot lunch everyone morning. TRMNL displays the lunch informatino on a screen next to the weather and our daily calendar. 
 
 You can use the tool below to find the  District, School, and Menu IDs needed to configure the TRMNL My School Menus recipe: 
 
