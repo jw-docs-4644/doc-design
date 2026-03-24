@@ -24,7 +24,7 @@ nav:
 #      - Publishing Documentation: portfolio/canvas-docs-as-code-public/PUBLISH_DOCUMENTATION.md
 #      - Ideas: portfolio/canvas-docs-as-code-public/IDEAS.md
     - TRMNL My School Menus:
-      - ID Lookup: portfolio/trmnl-msm/index.md
+      - Overview and School Menu Lookup Tool: portfolio/trmnl-msm/index.md
     - Intervals.icu:
       - Overview: portfolio/intervals-icu/index.md
       - How-To:
