@@ -6,6 +6,8 @@ The My School Menus plugin for the [TRMNL device](https://www.trmnl.com) provide
 
 You can use the tool below to find the  District, School, and Menu IDs needed to configure the TRMNL My School Menus recipe: 
 
+## School Lookup Tool
+
 1. Search for your school district, then use the drop-down menu to select your school and the menu you want displayed. 
 2. Copy the values and paste them into the School IDs field in the plugin settings page. 
 
