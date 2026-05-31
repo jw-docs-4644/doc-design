@@ -24,6 +24,7 @@ Below are some of my own projects that use a docs-as-code approach:
 - **Canvas Docs-as-Code** – Python tool for authoring Canvas LMS courses from Markdown and YAML
 - **Canvas API Scripts** – Utilities for working with Canvas LMS API
 - **Intervals.icu Uploader** – Automation tool for managing workout plans
+- **[Sheetbend](https://sheetbend.app)** – Web tool that extracts topics and concept maps from academic documents using LLMs
 
 Browse the [portfolio](portfolio/index.md) to see more.
 
