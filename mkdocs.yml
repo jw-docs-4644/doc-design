@@ -1,4 +1,14 @@
 site_name: Doc Design Consulting
+site_url: https://doc-design.dev/
+site_description: Documentation consulting — docs-as-code, technical writing strategy, and LLM-assisted documentation workflows for education and software teams.
+site_author: Josh Welsh
+exclude_docs: |
+  # Internal/working docs — kept in the repo, never built or deployed
+  IDEAS.md
+  PUBLISH_DOCUMENTATION.md
+  *_UPDATES.md
+  # draft, not ready to publish
+  blog/first-post.md
 theme:
   name: mkdocs
 nav:
