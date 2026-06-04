@@ -17,6 +17,8 @@ nav:
   - About: about.md
   - Portfolio:
     - Overview: portfolio/index.md
+    - Sheetbend:
+      - Overview: portfolio/sheetbend/index.md
     - Canvas Docs-as-Code:
       - Case Study: portfolio/canvas-docs-as-code-public/case-study.md
 #      - README: portfolio/canvas-docs-as-code-public/README_UPDATES.md

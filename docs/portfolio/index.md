@@ -4,6 +4,8 @@ This page showcases some of my docs-as-code and related projects. Some are strai
 
 ## Projects
 
+- **[Sheetbend](https://sheetbend.app)** – Sheebend is a topic-based authoring platform for teachers. It extracts existing topics from documents, then offers a way to keep them organized and up to date. Individual topics can be remixed into different arrangements and exported to Word, PowerPoint, PDF< or Markdown.
+
 - **[Canvas Docs-as-Code](canvas-docs-as-code-public/case-study.md)** – This project rethinks the entire course-building process in Canvas. Instead of creating content in a web browser, the project makes it possible to write an entire course in Markdown and yaml. It also uses a single CSV file to manage all of a course's assessment rubrics. 
 
 - **[TRMNL - My School Menus Plugin Integration](trmnl-msm/index.md)** – This project helps solve the problem of finding menu information on a busy school morning. I used Claude CLI to write a plugin for the TRMNL device that displays menu information for the coming school day. The lookup tool itself is embedded directly in the documentation --- a simple Markdown page published using MkDocs and GitHub Pages.
