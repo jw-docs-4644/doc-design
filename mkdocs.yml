@@ -11,6 +11,7 @@ exclude_docs: |
   blog/first-post.md
 theme:
   name: mkdocs
+  custom_dir: overrides
 nav:
   - Home: index.md
   - Services: services.md

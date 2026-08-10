@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{#
+  Theme override for the built-in mkdocs theme. The theme's own main.html is an
+  empty `extends base.html`, and this is the documented place to redefine blocks.
+
+  Umami analytics. GitHub Pages is static-only, so unlike sheetbend.app and
+  trailrun.training there's no server-side hop available to proxy the tracker
+  first-party — it loads straight from the self-hosted Umami instance.
+
+  data-domains keeps `mkdocs serve` silent: the tracker only sends when the
+  page hostname matches, so local previews never reach the collector.
+#}
+{% block extrahead %}
+  <script defer src="https://umami-production-5fe9.up.railway.app/script.js"
+          data-website-id="a5e33a70-ab16-4594-baa2-cd1cbdf1e4c0"
+          data-domains="doc-design.dev"></script>
+{% endblock %}
